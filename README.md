@@ -6,6 +6,11 @@
 * Outer Link --
 	* [中文人名语料库](https://github.com/wainshine/Chinese-Names-Corpus)
 * Tips --
+	* stopwords.dat为utf-8编码，使用时
+	```python
+	with open('stopwords.dat','r') as fin:
+		word_in_unicode = fin.readline.strip().decode('utf-8')
+	```
 	* Chinese extraction
 	```python
 	import re
